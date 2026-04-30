@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RentSport — Аренда спортивного инвентаря</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка и Главный экран -->
+    <header id="hero" class="hero">
+        <nav class="navbar">
+            <div class="logo">RentSport</div>
+            <ul class="nav-menu">
+                <li><a href="#hero">Главная страница</a></li>
+                <li><a href="#categories">Мероприятия</a></li>
+                <li><a href="#feedback">О нас</a></li>
+            </ul>
+        </nav>
+        <div class="hero-text">
+            <h1>«RentSport» — Аренда спортивного инвентаря на любой вкус</h1>
+        </div>
+    </header>
+
+    <!-- Секция преимуществ -->
+    <section class="container content-section">
+        <div class="flex-row reverse">
+            <div class="text-block">
+                <p>Горные лыжи и сноуборды, велосипеды, снаряжение для кемпинга и многое другое. Идеальное состояние. Доставка и страховка включены.</p>
+            </div>
+            <div class="image-block">
+                <img src="/2.jpg" alt="Лыжное снаряжение">
+            </div>
+        </div>
+
+        <div class="flex-row">
+            <div class="text-block">
+                <h3>Ваш активный отдых — наша забота. Арендуйте на день, неделю или сезон.</h3>
+                <ul class="benefits-list">
+                    <li><span class="check">✅</span> <b>Экономия:</b> Не покупайте дорогой инвентарь, которым пользуетесь раз в год.</li>
+                    <li><span class="check">✅</span> <b>Качество и безопасность:</b> Весь инвентарь проходит регулярное ТО.</li>
+                    <li><span class="check">✅</span> <b>Удобство:</b> Бесплатная доставка по городу.</li>
+                    <li><span class="check">✅</span> <b>Широкий ассортимент:</b> От велосипедов до палаток.</li>
+                    <li><span class="check">✅</span> <b>Гибкие условия:</b> Страховка от поломки уже включена.</li>
+                </ul>
+            </div>
+            <div class="image-block">
+                <img src="/3.jpg" alt="Сноубордисты">
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция Категории и Бронирование -->
+    <section id="categories" class="container categories-section">
+        <div class="flex-row">
+            <div class="category-list">
+                <!-- Здесь твоя новая сгенерированная картинка -->
+                <img src="/4.jpg" alt="Инвентарь" class="cat-img">
+                <p class="center-text"><b>Выберите категорию для вашего приключения</b></p>
+                <ul class="cat-links">
+                    <li>Зимний спорт: Горные лыжи, сноуборды... <a href="#feedback">Забронировать</a></li>
+                    <li>Лето/Город: Велосипеды, самокаты... <a href="#feedback">Забронировать</a></li>
+                    <li>Туризм: Палатки, спальники... <a href="#feedback">Забронировать</a></li>
+                </ul>
+            </div>
+            <div class="booking-guide">
+                <div class="booking-card">
+                    <h3>как вы можете забронировать</h3>
+                    <ol>
+                        <li>Выберите инвентарь на сайте.</li>
+                        <li>Оформите заявку по телефону.</li>
+                        <li>Получите доставку в удобное время.</li>
+                        <li>Наслаждайтесь отдыхом!</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма и Отзывы -->
+    <section id="feedback" class="container feedback-section">
+        <div class="flex-row">
+            <div class="form-promo">
+                <h3>Готовы к активности? Оставьте заявку!</h3>
+                <p>Наш менеджер свяжется с вами в течение 15 минут, чтобы подобрать лучший вариант по вашим запросам и датам.</p>
+            </div>
+            <form class="order-form">
+                <h4>Форма для заявки:</h4>
+                <input type="text" placeholder="Имя">
+                <input type="text" placeholder="Номер телефона (*)" required>
+                <input type="email" placeholder="Электронная почта">
+                <select>
+                    <option value="">Выберите категорию</option>
+                    <option value="winter">Зимний спорт</option>
+                    <option value="summer">Велосипеды и т.д.</option>
+                </select>
+                <textarea placeholder="Комментарий (например, желаемые даты)"></textarea>
+                <button type="button">ОТПРАВИТЬ ЗАЯВКУ</button>
+            </form>
+        </div>
+
+        <div class="reviews-box">
+            <h2>ОТЗЫВЫ</h2>
+            <p>• <b>Анна, турист:</b> «Взяли на неделю палатку и рюкзаки для похода. Всё было в идеальном состоянии!»</p>
+            <p>• <b>Максим, любитель велопрогулок:</b> «Катаюсь только по выходным. Покупка велика нецелесообразна. Арендую на сезон — отличный сервис!»</p>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container footer-flex">
+            <div class="contacts">
+                <p>Контакты: +7 (391)-236-01-77</p>
+                <p>Email: <a href="mailto:Megaorendator@gmail.com">Megaorendator@gmail.com</a></p>
+                <p>Адрес пункта выдачи: Улица Мира 70</p>
+                <p><b>Остались вопросы? Звоните прямо сейчас!</b></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

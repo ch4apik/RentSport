@@ -1,0 +1,145 @@
+/* Общие настройки */
+html {
+    scroll-behavior: smooth; /* Плавная прокрутка */
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+/* Скриншот 1: Hero */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: opacity 0.3s;
+}
+
+.nav-menu a:hover { opacity: 0.7; }
+
+.hero-text {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    max-width: 900px;
+    margin: 0;
+}
+
+/* Скриншот 2: Контентные блоки */
+.flex-row {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 80px;
+    align-items: center;
+}
+
+.flex-row.reverse { flex-direction: row-reverse; }
+
+.text-block, .image-block, .category-list, .booking-guide { flex: 1; }
+
+.image-block img, .cat-img {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.benefits-list { list-style: none; padding: 0; }
+.benefits-list li { margin-bottom: 15px; }
+
+.edit-hint { color: #aaa; font-size: 0.85rem; }
+
+/* Скриншот 3: Категории и Гайд */
+.cat-links { list-style: none; padding: 0; }
+.cat-links li { margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+.cat-links a { color: blue; text-decoration: underline; font-size: 0.9rem; margin-left: 10px; }
+
+.booking-card {
+    border: 2px solid #5a96d4;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.booking-card h3 {
+    color: #800080;
+    text-transform: lowercase;
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+/* Скриншот 4: Форма и Отзывы */
+.order-form {
+    background: #fdfdfd;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    border: 1px solid #eee;
+}
+
+.order-form input, .order-form select, .order-form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.order-form button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.reviews-box {
+    border: 2px solid #5a96d4;
+    padding: 40px;
+    margin-top: 50px;
+}
+
+.reviews-box h2 { color: #800080; margin-top: 0; }
+
+/* Футер */
+.footer { background: #f9f9f9; padding: 40px 0; border-top: 1px solid #eee; }
+.footer-flex { display: flex; gap: 60px; align-items: center; }
+
